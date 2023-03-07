@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+  <title>Messi Reputation</title>
+</head>
+<body>
+
+  <div class="how-to-use">
+    <span>Como usar: Adicione gols, assistências e títulos a Lionel Messi, ao adicionar esses atributos, o jogador Argentino irá ganhar reputação mundial, número de seguidores e fama.</span>
+  </div>
+
+  <main class="main">
+
+    <section class="messi">
+      <a href="https://www.instagram.com/leomessi/" target="_blank">
+        <img src="img/lionel-messi.png" alt="Lionel Messi">
+      </a>
+    </section>
+
+    <div class="separator">
+      
+      <section class="reputation">
+  
+        <div class="estatistica">
+          <p class="estatistica-titulo">Reputação Mundial</p>
+          <div class="estatistica-valor">
+            <p class="estatistica-numero" data-estatistica="reputacao">0</p>
+          </div>
+        </div>
+  
+        <div class="estatistica">
+          <p class="estatistica-titulo">Número de seguidores</p>
+          <div class="estatistica-valor">
+            <p class="estatistica-numero" data-estatistica="seguidores">0</p>
+          </div>
+        </div>
+  
+        <div class="estatistica">
+          <p class="estatistica-titulo">Fama</p>
+          <div class="estatistica-valor">
+            <p class="estatistica-numero" data-estatistica="fama">0</p>
+          </div>
+        </div>
+  
+      </section>
+    
+      <section class="controle-main">
+        <div class="box-montador">
+          <div class="stats">
+            <span class="stats-titulo">Gols</span>
+            <div class="controle">
+              <button class="controle-ajuste" data-controle="-" data-stats="gols">-</button>
+              <input type="text" class="controle-contador" value="00" id="gol" data-contador="">
+              <button class="controle-ajuste" data-controle="+" data-stats="gols">+</button>
+            </div>
+          </div>
+  
+          <div class="stats">
+            <span class="stats-titulo">Assistências</span>
+            <div class="controle">
+              <button class="controle-ajuste" data-controle="-" data-stats="assistencias">-</button>
+              <input type="text" class="controle-contador" value="00" id="ass" data-contador="">
+              <button class="controle-ajuste" data-controle="+" data-stats="assistencias">+</button>
+            </div>
+          </div>
+  
+          <div class="stats">
+            <span class="stats-titulo">Títulos</span>
+            <div class="controle">
+              <button class="controle-ajuste" data-controle="-" data-stats="titulos">-</button>
+              <input type="text" class="controle-contador" value="00" id="titulo" data-contador="">
+              <button class="controle-ajuste" data-controle="+" data-stats="titulos">+</button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+  </main>
+  
+
+  <script src="main.js"></script>
+</body>
+</html>

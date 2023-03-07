@@ -1,0 +1,296 @@
+@import 'reset';
+
+
+body{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  background-color: rgb(0, 1, 54);
+  background-size: cover;
+
+  .how-to-use{
+    width: 40%;
+    background-color: rgba(58, 9, 148, 0.445);
+    margin-bottom: 20px;
+    padding: 15px;
+    font-weight: 400;
+
+    span{
+      color: white;
+    }
+  }
+
+//--------------------------------------MAIN-------------------------//////
+  .main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60%;
+    height: 70vh;
+    box-shadow: 0px 10px 20px 5px rgb(57, 9, 148);
+    border-radius: 10px;
+
+    //--------------------------------------MESSI CONTAINER-------------------------//////
+
+    .messi{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 30%;
+      height: 100%;
+      background-color: rgba(6, 20, 146, 0.24);
+      box-shadow: 0px 10px 20px 5px rgb(57, 9, 148);
+  
+      a{
+        img {
+          width: 500px;
+          transition: all 0.2s ease-in-out;
+  
+          &:hover{
+            transform: scale(1.2);
+            cursor: pointer;
+          }
+        }
+        
+      }
+  
+    }
+
+    .separator{
+      display: flex;
+      width: 100%;
+      height: 100%;
+      .reputation{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        width: 40%;
+        height: 80%;
+        background-color: rgba(6, 20, 146, 0.24);
+        margin-left: 50px;
+        margin-top: 40px;
+
+    .estatistica{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 70px;
+      margin-top: 20px;
+      
+      .estatistica-titulo{
+        color: white;
+        font-size: 25px;
+        background-color: rgba(58, 9, 148, 0.507);
+        padding: 10px;
+        border-radius: 10px;
+        
+      }
+
+      .estatistica-valor{
+        margin-top: 10px;
+        .estatistica-numero{
+          color: white;
+          font-size: 30px;
+        }
+      }
+    }
+  }
+
+
+    .controle-main{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 40%;
+      height: 80%;
+      background-color: rgba(6, 20, 146, 0.24);
+      margin-left: 30px;
+      margin-right: 50px;
+      margin-top: 40px;
+
+
+      .box-montador{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        align-items: center;
+        flex-direction: column;
+
+        .stats{
+          width: 80%;
+          height: 60px;
+          display: flex;
+          justify-content: flex-start;
+          align-items: center;
+          margin-bottom: 100px;
+          background-color: rgba(58, 9, 148, 0.233);
+          border-radius: 10px;
+          border-bottom: 1px solid rgb(57, 9, 148);;
+
+
+          .stats-titulo{
+            color: white;
+            font-weight: bold;
+            margin-right: 10px;
+            margin-left: 10px;
+          }
+
+          .controle{
+            .controle-ajuste{
+              background-color: rgb(57, 9, 148);
+              border: none;
+              color: white;
+              padding: 5px 10px;
+              border-radius: 100%;
+              font-weight: bold;
+              font-size: 20px;
+              border-bottom: 1px solid white;
+
+              &:hover{
+                cursor: pointer;
+                background-color: rgb(131, 83, 221);;
+              }
+            }
+
+            .controle-contador{
+              width: 34px;
+              height: 20px;
+              color: white;
+              background-color: rgba(6, 20, 146, 0.24);
+              border: none;
+              font-size: 20px;
+              
+            }
+          }
+        }
+
+      }
+    }
+    }
+
+  
+   
+  }
+}
+
+@media screen and (max-width: 1510px){
+  body{
+    .main{
+      align-items: center;
+      justify-content: start;
+      flex-direction: column;
+      .messi{
+        width: 80%;
+        height: 30%;
+        margin-top: 20px;
+        a{
+          img{
+            width: 200px;
+          }
+        }
+      }
+
+      .separator{
+        .reputation{
+          width: 80%;
+          height: 80%;
+          margin-left: 0px;
+
+          .estatistica{
+            margin-bottom: 5px;
+
+
+          }
+        }
+  
+        .controle-main{
+          width: 80%;
+          height: 80%;
+          margin-right: 0px;
+          margin-left: 0px;
+
+          .box-montador{
+            .stats{
+              margin-bottom: 10px;
+            }
+          }
+        }
+        
+      }
+
+    }
+  }
+}
+
+@media screen and (max-width: 800px){
+  body{
+
+    .how-to-use{
+      padding: 10px;
+      font-size: 14px;
+    }
+    .main{
+
+      .messi{
+       justify-content: center;
+
+       a{
+        img{
+          width: 100px;;
+        }
+       }
+      }
+
+      .separator{
+        .reputation{
+
+          .estatistica{
+   
+            .estatistica-titulo{
+              font-size: 15px;
+            }
+
+            .estatistica-valor{
+              .estatistica-numero{
+                font-size: 18px;
+              }
+            }
+          }
+        }
+  
+        .controle-main{
+
+
+          .box-montador{
+            .stats{
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              justify-content: center;
+              .stats-titulo{
+                font-size: 15px;
+                margin-left: 0;
+              }
+
+              .controle{
+                .controle-ajuste{
+                  font-size: 10px;
+                }
+
+                .controle-contador{
+                  width: 18px;
+                  font-size: 16px;
+                }
+              }
+            }
+          }
+        }
+        
+      }
+
+    }
+  }
+}
